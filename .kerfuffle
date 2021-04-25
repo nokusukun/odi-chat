@@ -1,0 +1,23 @@
+[meta]
+    name = "my-application"
+    
+[provision.init]
+    run = [
+        ["yarn"]
+    ]
+
+[provision.client]
+    run = [
+        ["yarn", "run", "start"]
+    ]
+    envs = []
+    base_dir = ""
+
+[proxy.client]
+    host = ["chat.noku.pw"]
+
+
+[cloudflare.client]
+    host = ["chat.noku.pw"]
+    zone = "noku.pw"
+    proxied = true
