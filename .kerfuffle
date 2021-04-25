@@ -1,5 +1,5 @@
 [meta]
-    name = "my-application"
+    name = "Odi Chat"
     
 [provision.init]
     run = [
