@@ -1,0 +1,88 @@
+
+.chat {
+    width: 350px;
+    height: 350px;
+
+    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+    margin: 2rem;
+  
+    border-radius: .28571429rem;
+    border: 1px solid rgba(34,36,38,.15);
+}
+
+.chat .container {
+    overflow: overlay;
+    height: 283px;
+    padding: 1em 1em;
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: #e0e1e2 none;
+    color: rgba(0,0,0,.6);
+    padding: .78571429em 1.5em .78571429em;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: 700;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34,36,38,.15) inset;
+}
+
+button:hover {
+    background-color: #cacbcd;
+    background-image: none;
+    box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34,36,38,.15) inset;
+    color: rgba(0,0,0,.8);
+}
+button:active {
+    background-color: #babbbc;
+    color: rgba(0,0,0,.9);
+    box-shadow: 0 0 0 1px transparent inset,none;
+}
+
+input {
+    margin: 0;
+    max-width: 100%;
+    flex: 1 0 auto;
+    outline: 0;
+    text-align: left;
+    line-height: 1.21428571em;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    padding: .67857143em 1em;
+    background: #fff;
+    border: 1px solid rgba(34,36,38,.15);
+    color: rgba(0,0,0,.87);
+    border-radius: .28571429rem;
+}
+
+.message-box {
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+}
+
+.message-box input:first-child  {
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+    border-color: transparent;
+    border-top-left-radius: 0!important;
+    border-top-color: rgba(34,36,38,.15);
+}
+
+.message-box input:nth-child(2) {
+    border-radius: 0;
+    border-bottom-color: transparent;
+}
+
+.message-box button {
+    border-radius: 0 0 .28571429rem 0;
+    min-height: 36px;
+}
