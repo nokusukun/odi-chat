@@ -10,7 +10,7 @@
     run = [
         ["yarn", "run", "start"]
     ]
-    envs = []
+    envs = ["TESTMODE=1"]
     base_dir = ""
 
 [proxy.client]
